@@ -29,7 +29,7 @@ func HandlePostContactFormHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	to := os.Getenv("CONTACT_FORM_RECIPIENT")
-	subject := "Contact Form : " + req.Name
+	subject := "Contact From : " + req.Name
 	body := "You have received a new message from your website's contact form:\n\n" +
 		"Name: " + req.Name + "\n" +
 		"Email: " + req.Email + "\n\n" +
